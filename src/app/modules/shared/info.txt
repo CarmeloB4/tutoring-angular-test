@@ -1,0 +1,2 @@
+Questa è una cartela creata solamente per ricreare la struttura classica di un progetto Angular.
+In questa cartella andranno Moduli, Componenti e Servizi condivisi.
