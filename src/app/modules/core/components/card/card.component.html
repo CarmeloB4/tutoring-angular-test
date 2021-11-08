@@ -1,1 +1,7 @@
-<p>card works!</p>
+<div class="container-card d-flex flex-column mb-3" *ngFor="let product of products">
+  <img [src]="product.img">
+  <h1 class="mb-0 ms-1 mt-2">{{product.title}}</h1>
+  <p class="mt-1 ms-1 mb-1">{{product.price | currency: "EUR"}}</p>
+  <button class="ms-auto me-2">Show Detail</button>
+</div>
+

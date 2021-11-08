@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PRODUCTS} from "../../../shared/models/mock-data";
 
 @Component({
   selector: 'app-container',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./container.component.scss']
 })
 export class ContainerComponent implements OnInit {
-
+  products = PRODUCTS;
   constructor() { }
 
   ngOnInit(): void {
