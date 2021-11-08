@@ -1,1 +1,11 @@
-<app-details [product]="product"></app-details>
+<div class="d-flex justify-content-evenly align-items-center container-home">
+<app-list [products]="products"></app-list>
+  <div class="container-splash text-center">
+    <h2>Benvenuti nello shop di</h2>
+    <img src="https://www.develhope.co/_nuxt/img/cav_black.9dc2b13.svg">
+    <h3 class="mt-5">Clicca sui dettagli del prodotto per visualizzare tutte le informazioni</h3>
+  </div>
+
+  <app-details [product]="product"></app-details>
+</div>
+

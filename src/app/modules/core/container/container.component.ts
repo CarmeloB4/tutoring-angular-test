@@ -9,9 +9,7 @@ import { PRODUCTS } from './../../../shared/models/mock-data';
   styleUrls: ['./container.component.scss']
 })
 export class ContainerComponent implements OnInit {
-
-  products: IProduct[] = PRODUCTS;
-
+  products = PRODUCTS;
   constructor() { }
 
   ngOnInit(): void {
