@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {PRODUCTS} from "../../../../shared/models/mock-data";
 import {IProduct} from "../../../../shared/models/product";
 
@@ -9,6 +9,7 @@ import {IProduct} from "../../../../shared/models/product";
 })
 export class CardComponent implements OnInit {
 @Input() products: IProduct[] = [];
+@Output() showDetail = new EventEmitter<IProduct>();
   constructor() { }
 
   ngOnInit(): void {
