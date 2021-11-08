@@ -2,6 +2,6 @@
   <img [src]="product.img">
   <h1 class="mb-0 ms-1 mt-2">{{product.title}}</h1>
   <p class="mt-1 ms-1 mb-1">{{product.price | currency: "EUR"}}</p>
-  <button class="ms-auto me-2">Show Detail</button>
+  <button class="ms-auto me-2" (click)="showDetail.emit(product)">Show Detail</button>
 </div>
 
