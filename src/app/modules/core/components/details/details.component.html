@@ -1,1 +1,30 @@
-<p>details works!</p>
+<div>
+<h1 class="my-3">Dettagli prodotto</h1>
+<div class="container d-flex flex-column" *ngFor="let product of products">
+  <div class="d-flex flex-row align-items-end mt-5">
+    <img [src]="product.img" class="d-inline" />
+    <div class="d-inline">
+      <h1 class="my-4">{{ product.title }}!</h1>
+      <p>Anno di uscita: {{ product.exitYear }}</p>
+      <p>Altezza: {{ product.productHeight }}</p>
+      <p>Peso: {{ product.productWeight }}</p>
+      <p>Pezzi prodotti: {{ product.itemsProduced }}</p>
+    </div>
+  </div>
+  <div class="d-flex flex-column my-5">
+    <div>
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum."
+    </div>
+    <div class="mt-3">
+      <b>Prezzo: {{ product.price }}€</b>
+    </div>
+  </div>
+  <button class="d-flex align-self-end">Chiudi</button>
+</div>
+</div>
