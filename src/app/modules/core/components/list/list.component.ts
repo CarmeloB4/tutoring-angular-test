@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {IProduct} from "../../../../shared/models/product";
 
 @Component({
@@ -8,6 +8,7 @@ import {IProduct} from "../../../../shared/models/product";
 })
 export class ListComponent implements OnInit {
 @Input() products: IProduct[] = [];
+@Output() productDetail = new EventEmitter<IProduct>()
   constructor() { }
 
   ngOnInit(): void {

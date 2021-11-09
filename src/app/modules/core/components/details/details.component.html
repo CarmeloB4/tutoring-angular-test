@@ -1,6 +1,6 @@
 <div>
 <h1 class="my-3">Dettagli prodotto</h1>
-<div class="container d-flex flex-column" *ngFor="let product of products">
+<div class="container d-flex flex-column">
   <div class="d-flex flex-row align-items-end mt-5">
     <img [src]="product.img" class="d-inline" />
     <div class="d-inline">
@@ -25,6 +25,6 @@
       <b>Prezzo: {{ product.price }}€</b>
     </div>
   </div>
-  <button class="d-flex align-self-end">Chiudi</button>
+  <button class="d-flex align-self-end" (click)="closeDetail.emit(true)">Chiudi</button>
 </div>
 </div>
