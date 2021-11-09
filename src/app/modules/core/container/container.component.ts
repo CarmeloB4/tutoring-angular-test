@@ -11,6 +11,7 @@ import {IProduct} from "../../../shared/models/product";
 export class ContainerComponent implements OnInit {
   products = PRODUCTS;
   product!: IProduct;
+  cart = [];
   hide = true;
   constructor() { }
 
@@ -24,6 +25,11 @@ export class ContainerComponent implements OnInit {
 
   closeDetail(value:boolean) {
     this.hide = value;
+  }
+
+  addToCart(product:IProduct) {
+    // @ts-ignore
+    this.cart.push(product)
   }
 
 }

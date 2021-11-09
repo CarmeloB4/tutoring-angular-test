@@ -1,5 +1,6 @@
 div {
-    font-family: 'Signika', sans-serif;
+  font-family: 'Signika', sans-serif;
+  width: 800px;
 
 .container {
   margin: 0;
@@ -40,6 +41,13 @@ div {
     border-radius: 20px;
     border: none;
     padding: 0.25rem 1.5rem;
+  }
+  .shop {
+    width: 160px;
+    height: 40px;
+    background: #F7B34E;
+    border-radius: 20px;
+    color: white;
   }
 }
 }

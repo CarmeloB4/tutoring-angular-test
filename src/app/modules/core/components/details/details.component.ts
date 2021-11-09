@@ -10,6 +10,7 @@ import { IProduct } from './../../../../shared/models/product';
 export class DetailsComponent implements OnInit {
   @Input() product!: IProduct;
   @Output() closeDetail = new EventEmitter<boolean>()
+  @Output() addToCart = new EventEmitter<IProduct>()
 
   constructor() {}
 

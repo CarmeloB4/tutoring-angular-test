@@ -25,6 +25,7 @@
       <b>Prezzo: {{ product.price }}€</b>
     </div>
   </div>
+  <button class="shop" (click)="addToCart.emit(product)">Acquista</button>
   <button class="d-flex align-self-end" (click)="closeDetail.emit(true)">Chiudi</button>
 </div>
 </div>
