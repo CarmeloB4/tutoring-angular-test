@@ -11,14 +11,14 @@ import {IProduct} from "../../../shared/models/product";
 export class ContainerComponent implements OnInit {
   products = PRODUCTS;
   product!: IProduct;
-  cart = [];
+  cart: IProduct[] = [];
   hide = true;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  showDetail(value:any) {
+  showDetail(value:IProduct) {
     this.product = value;
     this.hide = false;
   }
@@ -28,7 +28,6 @@ export class ContainerComponent implements OnInit {
   }
 
   addToCart(product:IProduct) {
-    // @ts-ignore
     this.cart.push(product)
   }
 

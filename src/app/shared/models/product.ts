@@ -10,5 +10,5 @@ export interface IProduct {
   exitYear: exitYear;
   productHeight:number;
   productWeight: number;
-  itemsProduced: number
+  itemsProduced: number;
 }

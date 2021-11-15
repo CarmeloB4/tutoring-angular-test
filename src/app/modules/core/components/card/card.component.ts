@@ -8,11 +8,10 @@ import {IProduct} from "../../../../shared/models/product";
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-@Input() products: IProduct[] = [];
+@Input() product!: IProduct;
 @Output() showDetail = new EventEmitter<IProduct>();
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
